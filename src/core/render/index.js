@@ -156,6 +156,7 @@ export function renderMixin(proto) {
             raw: result
           },
           tokens => {
+            console.log(tokens.slice())
             html = this.compiler.compile(tokens)
             callback()
             next()
